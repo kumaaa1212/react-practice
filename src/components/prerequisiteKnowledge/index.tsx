@@ -47,7 +47,7 @@ export default function PrerequisiteKnowledge() {
   console.log(obj.address());
   console.log(obj);
   // consoleにobjと入力しても、中身を表示することができる
-  
+
   return (
     <div>
       <h3>PrerequisiteKnowledge</h3>
