@@ -1,11 +1,13 @@
 import "./App.css";
-import PrerequisiteKnowledgePractice from "./components/prerequisiteKnowledge/practice";
+import PrerequisiteKnowledge from "./components/prerequisiteKnowledge";
+import Variables from "./components/variables";
 
 function App() {
   return (
     <div className="App">
       <h1>React Practice</h1>
-      <PrerequisiteKnowledgePractice />
+      <PrerequisiteKnowledge />
+      <Variables />
     </div>
   );
 }
