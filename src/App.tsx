@@ -1,13 +1,12 @@
 import "./App.css";
-import PrerequisiteKnowledge from "./components/prerequisiteKnowledge";
-import Variables from "./components/variables";
-
+import DataType from "./components/dataType";
 function App() {
   return (
     <div className="App">
       <h1>React Practice</h1>
-      <PrerequisiteKnowledge />
-      <Variables />
+      {/* <PrerequisiteKnowledge /> */}
+      {/* <Variables /> */}
+      < DataType />
     </div>
   );
 }
