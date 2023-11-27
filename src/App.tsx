@@ -1,14 +1,15 @@
+import { useState } from "react";
 import "./App.css";
-import DataType from "./components/JavaScript/dataType";
-import PrerequisiteKnowledge from "./components/JavaScript/prerequisiteKnowledge";
-import Variables from "./components/JavaScript/variables";
+import JavaScript from "./components/JavaScript";
+import React from "./components/React";
 function App() {
+  const [state, setState] = useState<boolean>();
   return (
     <div className="App">
-      <h1>React Practice</h1>
-      <PrerequisiteKnowledge />
-       <Variables />
-      < DataType />
+      <button className="display_btn" onClick={() => setState(!state)}>表示</button>
+      <div className="container">
+      {state ? <JavaScript /> : <React />}
+      </div>
     </div>
   );
 }
