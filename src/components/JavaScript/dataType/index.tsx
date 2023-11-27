@@ -1,17 +1,17 @@
 import DataTypesPractice from "./practice";
 
 export default function DataType() {
-  // true
+  // false
+  const f = 0;
+  const e = "";
   const a = null;
   const b = undefined;
-  const e = "";
-  console.log(a, b, e);
+  console.log(f, e, a, b);
 
-  // false
+  // true
   const c: string[] = [];
   const d = {};
-  const f = 0;
-  console.log(c, d, f);
+  console.log( c, d);
 
   // データ型１ (プリミティブ)
   // 真偽値、文字列、数値、undefined、null
