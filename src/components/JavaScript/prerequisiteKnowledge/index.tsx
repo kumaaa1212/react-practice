@@ -1,3 +1,5 @@
+import PrerequisiteKnowledgePractice from "./practice";
+
 export default function PrerequisiteKnowledge() {
   // 【変数】
   // 繰り返し使うものを入れておくもの
@@ -51,7 +53,7 @@ export default function PrerequisiteKnowledge() {
   return (
     <div>
       <h3>PrerequisiteKnowledge</h3>
-      <PrerequisiteKnowledge />
+      <PrerequisiteKnowledgePractice />
     </div>
   );
 }

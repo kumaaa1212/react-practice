@@ -25,6 +25,7 @@ export default function DataType() {
   {
     let a = 1;
     let b = a;
+    console.log(a, b);
     // この場合は、aのコピーがbに入る
   }
 
@@ -49,6 +50,7 @@ export default function DataType() {
     const a = {
       props: "S",
     };
+    console.log(a);
     // a ={}
     // constの場合は、一度目の参照がロックされる
   }
