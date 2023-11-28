@@ -1,4 +1,4 @@
-import State from "./practice";
+import State from "./state";
 
 export default function React() {
   return (

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import State2 from "./state2";
-import State1 from "./state1";
+import State2 from "./practice/state2";
+import State1 from "./practice/state1";
 
 export default function State() {
   const obj = {
