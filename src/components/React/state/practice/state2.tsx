@@ -8,7 +8,7 @@ export default function State2(props: Props) {
 
   return (
     <div>
-      <h1>State2</h1>
+      <h3>State2</h3>
       {component}
     </div>
   );
