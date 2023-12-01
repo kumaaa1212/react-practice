@@ -4,7 +4,7 @@ export default function FundamentalKnowledge() {
   // babelでJSXをJSに変換する。その目印
   return (
     <div>
-      <h2>fundamentalKnowledge</h2>
+      <h1>fundamentalKnowledge</h1>
     </div>
   );
 }
