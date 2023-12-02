@@ -1,5 +1,6 @@
 import DataType from "./dataType";
 import PrerequisiteKnowledge from "./prerequisiteKnowledge";
+import Scope from "./scope";
 import Variables from "./variables";
 
 export default function JavaScript() {
@@ -9,6 +10,7 @@ export default function JavaScript() {
       <PrerequisiteKnowledge />
       <Variables />
       <DataType />
+      <Scope />
     </div>
   );
 }
