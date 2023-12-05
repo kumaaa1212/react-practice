@@ -6,7 +6,7 @@ export default function CustomHooks() {
   const handelClick = () => {
     console.log("handelClick");
     handleCount(1);
-  }
+  };
   return (
     <div>
       <h1>CustomHooks</h1>

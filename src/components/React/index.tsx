@@ -1,6 +1,7 @@
 import FunctionalProgramming from "./ functionalProgramming";
 import CustomHooks from "./customHooks";
 import FundamentalKnowledge from "./fundamentalKnowledge";
+import Performance from "./performance";
 import State from "./state";
 
 export default function React() {
@@ -11,6 +12,7 @@ export default function React() {
       <State />
       <FunctionalProgramming />
       <CustomHooks />
+      <Performance />
     </div>
   );
 }
