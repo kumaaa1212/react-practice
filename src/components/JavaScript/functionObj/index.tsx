@@ -23,7 +23,7 @@ export default function FunctionObj1() {
   const handle2 = function (...args: number[]) {
     const a = args[0];
     const b = args[1];
-    console.log("handle2");
+    console.log(a, b);
   };
   handle2(1, 2);
 
