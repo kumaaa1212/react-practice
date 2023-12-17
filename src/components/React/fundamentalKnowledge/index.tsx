@@ -22,6 +22,14 @@ export default function FundamentalKnowledge() {
           <FundamentalKnowledgetest2 />,
           <FundamentalKnowledgetest2 />,
         ]}
+        test={[
+          <h1>
+            <p>ssssss</p>
+          </h1>,
+          <h1>
+            <p>ssssss</p>
+          </h1>
+        ]}
         component={<FundamentalKnowledgetest2 />}
       />
     </div>

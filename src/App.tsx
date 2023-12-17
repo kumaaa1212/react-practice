@@ -10,7 +10,7 @@ function App() {
       <button className="display_btn" onClick={() => setState(!state)}>
         表示
       </button>
-      {/* <div className="container">{state ? <JavaScript /> : <React />}</div> */}
+      <div className="container">{state ? <JavaScript /> : <React />}</div>
       <TodoApp />
     </div>
   );

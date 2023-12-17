@@ -1,3 +1,6 @@
+import { useCallback, useEffect, useState } from "react";
+import useTest from "../../../components/React/customHooks/hooks/usetest";
+
 interface ObjData1 {
   id: number;
   a: number;
@@ -17,6 +20,7 @@ interface ObjData2 {
 }
 
 export default function TodoAppReview() {
+  const [firstState, setFirstState] = useState(0);
   {
     const testData = {
       id: 1,
@@ -133,9 +137,51 @@ export default function TodoAppReview() {
     };
     handle(handleTest);
   }
+
+  // ここ重要になる
+  const handleCountssss = () => {
+    setFirstState((prev) => prev + 1);
+    setFirstState((prev) => prev + 1);
+    // これだとここでは0、外だと2が帰ってくる
+    setFirstState(firstState + 1);
+    setFirstState(firstState + 1);
+    // これだと1が帰ってくる0 + 1を2回行っても1しか帰ってこない
+    console.log(firstState);
+  };
+
+  const testState = {
+    name: "test",
+    age: 20,
+  };
+
+  const handleInput = (e: any) => {
+    testState.name = e.target.value;
+    // setSecondState({ ...secondState, name: e.target.value });
+  };
+  const { countState, handleCount } = useTest();
+
+  const handelClick = () => {
+    console.log("handelClick");
+    handleCount(1);
+  };
+
+  const perfomanceTest = useCallback(() => {
+    console.log("perfomanceTest");
+    // setCount((prev) => prev + 1);
+  }, []);
+
+  useEffect(() => {
+    console.log("useEffect");
+    perfomanceTest();
+  }, [perfomanceTest]);
+
   return (
     <div>
       <h1>Todo App Review</h1>
+      <button onClick={handleCountssss}>ボタン</button>
+      <button onClick={handelClick}>ボタン</button>
+      <p>{countState}</p>
+      <input type="text" onChange={handleInput} />
     </div>
   );
 }
