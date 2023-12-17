@@ -1,4 +1,5 @@
 import VariablesPractice from "./practice";
+import Test1 from "./test1";
 
 export default function Variables() {
   const obj = {
@@ -24,6 +25,8 @@ export default function Variables() {
     <div>
       <h3>Variables</h3>
       <VariablesPractice />
+      <p>2023/12/9</p>
+      <Test1 />
     </div>
   );
 }
