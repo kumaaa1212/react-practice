@@ -3,6 +3,7 @@ import CustomHooks from "./customHooks";
 import FundamentalKnowledge from "./fundamentalKnowledge";
 import Performance from "./performance";
 import State from "./state";
+import UseEffect from "./useEffect";
 
 export default function React() {
   return (
@@ -13,6 +14,7 @@ export default function React() {
       <FunctionalProgramming />
       <CustomHooks />
       <Performance />
+      <UseEffect />
     </div>
   );
 }
